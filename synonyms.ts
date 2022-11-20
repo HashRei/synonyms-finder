@@ -37,18 +37,18 @@ const inputData = {
   ],
 };
 
-// list creation
+// List creation
 let listOfArrays: string[][] = [];
 
 for (let testCase = 0; testCase < inputData.T; testCase++) {
-  // main run process
+  // Main run process
   loopDictionary(testCase);
   loopQueries(testCase);
   listOfArrays = [];
 }
 
 function loopDictionary(testCase: number) {
-  // loop through DICTIONARY
+  // Loop through DICTIONARY
   for (
     let indexDictionary = 0;
     indexDictionary < inputData.testCases[testCase].dictionary.length;
